@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IlG-AL-IBj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ipE-ZU-rop">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="IlG-AL-IBj" customClass="ViewController" customModule="PagerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o9M-2G-azv"/>
+                        <viewControllerLayoutGuide type="bottom" id="zfY-7d-JuT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C8F-pW-kaL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yil-Rh-RvZ">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IlG-AL-IBj" kind="show" id="K38-BD-UZB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uy-hB-1kI">
+                                <rect key="frame" x="279" y="227" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="yil-Rh-RvZ" secondAttribute="centerY" id="NIZ-Zp-mh6"/>
+                            <constraint firstAttribute="centerX" secondItem="yil-Rh-RvZ" secondAttribute="centerX" id="TiZ-OA-K22"/>
+                            <constraint firstItem="yil-Rh-RvZ" firstAttribute="top" secondItem="8uy-hB-1kI" secondAttribute="bottom" constant="37.5" id="h7t-Yu-LaM"/>
+                            <constraint firstAttribute="centerX" secondItem="8uy-hB-1kI" secondAttribute="centerX" id="owm-uF-KWR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="8uy-hB-1kI" id="2hy-Tf-sYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYt-VK-hE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="331.5"/>
+        </scene>
+    </scenes>
+</document>
